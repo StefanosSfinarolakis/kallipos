@@ -7,6 +7,6 @@ function Image(img)
         local student = pandoc.utils.stringify(doc.meta.student)   --or "Person has not been set"
         local id = pandoc.utils.stringify(doc.meta.id)
         local comment = "> " .. caption .. "Name:" .. student .. " AM: " .. id
-        return pandoc.RawInline('markdown',earlygamingconsoles)
+        return pandoc.RawInline('markdown',comment)
       end
 end
